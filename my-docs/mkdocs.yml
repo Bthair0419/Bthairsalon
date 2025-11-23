@@ -1,0 +1,38 @@
+# site_name: My Docs
+
+# theme:
+#   name: material
+#   language: zh-TW
+#   palette:
+#     - scheme: slate
+#       primary: grey
+#       accent: lime
+#   features:
+#     - navigation.instant
+#     - navigation.sections
+#     - navigation.tabs
+#     - toc.integrate
+#     - content.code.copy
+#     - content.code.annotate
+
+# extra_css:
+#   # - styles/industrial.css
+#   - styles/slate-dark.css  
+
+
+site_name: BT hair 比塔時尚
+nav :
+# - Home : index.md
+ - 首頁 : 首頁.md
+ - 設計師 : 設計師.md
+ - 作品 : 作品.md
+ - 產品 :  產品.md
+ - 連結 :  連結.md
+
+theme:
+  name: readthedocs
+  custom_dir: overrides
+extra:
+  company_name: "BT hair 比塔時尚"
+  company_address: "106 臺北市大安區忠孝東路四段216巷27弄4號"
+  company_phone: "0958479319"  
