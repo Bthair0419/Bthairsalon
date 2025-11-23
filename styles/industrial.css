@@ -1,0 +1,25 @@
+/* 使背景更「工業灰」 */
+.md-main {
+  background-color: #1a1a1a;
+}
+
+/* 標題帶點機械亮色 */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: #c7ff4a;
+  font-weight: 700;
+}
+
+/* 導覽列更硬朗 */
+.md-nav {
+  background-color: #161616;
+  border-right: 1px solid #333;
+}
+
+/* code 區塊有終端機風格 */
+code, pre {
+  background-color: #111 !important;
+  border: 1px solid #333;
+  color: #8aff80 !important;
+}
