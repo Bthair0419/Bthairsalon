@@ -1,5 +1,20 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="Du_G1SY9KCpb-rGCErx4eSTm-uMA-h1QAu7_VouJmjc">
+
+  <!-- SEO 基本設定 -->
+  <meta name="description" content="{{ config.extra.description }}">
+  <meta name="keywords" content="{{ config.extra.keywords }}">
+
+  <!-- 社群分享（LINE/FB/IG 預覽） -->
+  <meta property="og:title" content="{{ config.site_name }}">
+  <meta property="og:description" content="{{ config.extra.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bthair0419.github.io/Bthairsalon/">
+{% endblock %}
+
 {% block content %}
   {% include "partials/header.html" %}
   {{ super() }}

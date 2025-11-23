@@ -32,7 +32,10 @@ nav :
 theme:
   name: readthedocs
   custom_dir: overrides
+
 extra:
   company_name: "BT hair 比塔時尚"
   company_address: "106 臺北市大安區忠孝東路四段216巷27弄4號"
-  company_phone: "0958479319"  
+  company_phone: "0958479319"
+  description: "台北大安區專業髮廊，日系剪髮、質感染髮、造型設計、護髮服務。"
+  keywords: "台北髮廊, 大安區髮廊, 剪髮推薦, 染髮推薦, BT hair, 設計師"
