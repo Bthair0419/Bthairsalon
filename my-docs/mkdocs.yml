@@ -21,6 +21,9 @@
 
 
 site_name: BT hair 比塔時尚
+site_url: https://bthair0419.github.io/Bthairsalon/
+use_directory_urls: false
+
 nav :
 # - Home : index.md
  - 首頁 : index.md
