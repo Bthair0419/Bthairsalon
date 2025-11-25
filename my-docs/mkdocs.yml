@@ -23,15 +23,19 @@
 site_name: BT hair 比塔時尚
 nav :
 # - Home : index.md
- - 首頁 : 首頁.md
+ - 首頁 : index.md
  - 設計師 : 設計師.md
  - 作品 : 作品.md
  - 產品 :  產品.md
- - 連結 :  連結.md
+ - 預約 :  預約.md
+ - 價目表 : 價目表.md
 
 theme:
   name: readthedocs
   custom_dir: overrides
+  logo: image/logo.jpg
+  favicon: favicon.ico
+
 
 extra:
   company_name: "BT hair 比塔時尚"
@@ -39,3 +43,11 @@ extra:
   company_phone: "0958479319"
   description: "台北大安區專業髮廊，日系剪髮、質感染髮、造型設計、護髮服務。"
   keywords: "台北髮廊, 大安區髮廊, 剪髮推薦, 染髮推薦, BT hair, 設計師"
+
+# 收起首頁 特殊符號 、 logo大小
+extra_css:
+  - styles/global-center.css
+  - styles/hide-expand.css
+  - styles/logo-size.css
+  - styles/gallery.css 
+  - styles/video-gallery.css

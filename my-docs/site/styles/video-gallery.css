@@ -1,0 +1,12 @@
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.videos video {
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+}
