@@ -1,8 +1,11 @@
-/* 全站公司名稱置中 */
+/* 讓公司名稱置中 */
 .global-company-title {
-    padding: 10px 0;
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-align: center;      /* ← 這就是關鍵 */
-    border-bottom: 1px solid #ccc;
+  text-align: center;
+  margin: 25px 0;
+}
+
+/* 讓標題變大 + 更吸睛 */
+.global-company-title strong {
+  font-size: 32px;   /* 想更大改這裡，例如 36px、40px */
+  font-weight: 800;
 }

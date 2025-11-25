@@ -1,7 +1,6 @@
 
 
 <div style="text-align:center; margin: 20px 0;">
-  <h2 style="font-size: 28px; font-weight: bold;">打造專屬你的髮型風格</h2>
   <p style="font-size: 18px; color: #666;">
       專業剪髮｜質感染髮｜造型設計  
   </p>
@@ -9,7 +8,6 @@
 
 ---
 
-## 精選作品影片
 
 
 <div style="text-align:center;">
