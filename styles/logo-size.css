@@ -1,0 +1,8 @@
+/* 控制左上角 Logo 大小 */
+.wy-side-nav-search img {
+    max-height: 120px;      /* 你可以改成 80px、100px */
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;     /* 看起來更精緻，可自行刪除 */
+}
