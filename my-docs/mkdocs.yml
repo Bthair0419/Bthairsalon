@@ -30,7 +30,7 @@ nav :
  - 設計師 : 設計師.md
  - 作品 : 作品.md
  - 產品 :  產品.md
- - 預約 :  預約.md
+ - 官方預約 :  官方預約.md
  - 價目表 : 價目表.md
 
 theme:
@@ -52,5 +52,6 @@ extra_css:
   - styles/global-center.css
   - styles/hide-expand.css
   - styles/logo-size.css
-  - styles/gallery.css 
+  - styles/gallery.css
   - styles/video-gallery.css
+  - styles/style.css
