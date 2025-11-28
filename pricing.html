@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>價目表 - BT hair 比塔時尚</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .pricing-tables {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .pricing-card h3 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        .price {
+            font-size: 2.5rem;
+            color: #d4a76a;
+            margin: 1rem 0;
+        }
+        .price span {
+            font-size: 1rem;
+            color: #666;
+        }
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        .pricing-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        .service-name {
+            color: #333;
+        }
+        .service-price {
+            color: #d4a76a;
+            font-weight: bold;
+        }
+        .btn-booking {
+            display: inline-block;
+            background: #d4a76a;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        .btn-booking:hover {
+            background: #c0955c;
+            transform: translateY(-2px);
+        }
+        .pricing-note {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>BT hair</h1>
+                <p>比塔時尚</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="services.html">服務項目</a></li>
+                    <li><a href="designers.html">設計師</a></li>
+                    <li><a href="portfolio.html">作品集</a></li>
+                    <li><a href="pricing.html" class="active">價目表</a></li>
+                    <li><a href="booking.html" class="btn-booking">預約諮詢</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="padding: 4rem 0;">
+        <h1 class="section-title">服務價目表</h1>
+        
+        <div class="pricing-tables">
+            <!-- 剪髮服務 -->
+            <div class="pricing-card">
+                <h3>剪髮服務</h3>
+                <div class="price">NT$800 <span>起</span></div>
+                <ul class="pricing-features">
+                    <li><span class="service-name">精緻剪髮</span> <span class="service-price">NT$800</span></li>
+                    <li><span class="service-name">設計師剪髮</span> <span class="service-price">NT$1,200</span></li>
+                    <li><span class="service-name">總監剪髮</span> <span class="service-price">NT$1,800</span></li>
+                    <li><span class="service-name">兒童剪髮 (12歲以下)</span> <span class="service-price">NT$600</span></li>
+                    <li><span class="service-name">學生剪髮 (憑學生證)</span> <span class="service-price">NT$700</span></li>
+                </ul>
+                <a href="booking.html" class="btn-booking">立即預約</a>
+            </div>
+            
+            <!-- 染髮服務 -->
+            <div class="pricing-card">
+                <h3>染髮服務</h3>
+                <div class="price">NT$1,800 <span>起</span></div>
+                <ul class="pricing-features">
+                    <li><span class="service-name">單一染髮</span> <span class="service-price">NT$1,800</span></li>
+                    <li><span class="service-name">挑染/片染</span> <span class="service-price">NT$2,500</span></li>
+                    <li><span class="service-name">漸層染/特殊色</span> <span class="service-price">NT$3,200</span></li>
+                    <li><span class="service-name">補染髮根</span> <span class="service-price">NT$1,500</span></li>
+                    <li><span class="service-name">染後護理</span> <span class="service-price">NT$800</span></li>
+                </ul>
+                <a href="booking.html" class="btn-booking">立即預約</a>
+            </div>
+            
+            <!-- 燙髮服務 -->
+            <div class="pricing-card">
+                <h3>燙髮服務</h3>
+                <div class="price">NT$2,500 <span>起</span></div>
+                <ul class="pricing-features">
+                    <li><span class="service-name">離子燙</span> <span class="service-price">NT$3,500</span></li>
+                    <li><span class="service-name">溫塑燙</span> <span class="service-price">NT$4,200</span></li>
+                    <li><span class="service-name">水波紋燙</span> <span class="service-price">NT$4,500</span></li>
+                    <li><span class="service-name">髮根燙</span> <span class="service-price">NT$2,500</span></li>
+                    <li><span class="service-name">燙後護理</span> <span class="service-price">NT$800</span></li>
+                </ul>
+                <a href="booking.html" class="btn-booking">立即預約</a>
+            </div>
+        </div>
+        
+        <div class="pricing-note">
+            <p>※ 以上價格僅供參考，實際價格依設計師評估為準</p>
+            <p>※ 長度超過肩膀加收200-500元不等</p>
+            <p>※ 特殊髮質或困難髮況，設計師會現場評估後報價</p>
+            <p>※ 預約時請告知欲預約的設計師與服務項目</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>BT hair 比塔時尚</h3>
+                    <p>106 臺北市大安區忠孝東路四段216巷27弄4號</p>
+                    <p>電話：0958-479-319</p>
+                    <div class="social-links">
+                        <a href="https://line.me/R/ti/p/@223hspye" target="_blank"><i class="fab fa-line"></i></a>
+                        <a href="https://www.instagram.com/bt_fast_hair/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/p/BT-hair-61575128732235/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="services.html">服務項目</a></li>
+                        <li><a href="designers.html">設計師</a></li>
+                        <li><a href="portfolio.html">作品集</a></li>
+                        <li><a href="pricing.html">價目表</a></li>
+                        <li><a href="booking.html">預約諮詢</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>營業時間</h4>
+                    <p>週一至週五：11:00 - 20:00</p>
+                    <p>週六至週日：10:00 - 21:00</p>
+                    <p>每月第二、四個週一公休</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BT hair 比塔時尚 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

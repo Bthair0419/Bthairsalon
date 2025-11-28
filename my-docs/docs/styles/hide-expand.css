@@ -1,4 +1,0 @@
-/* 隱藏 ReadTheDocs 左側導航的展開/收合 icon */
-.wy-nav-side .toctree-expand {
-    display: none !important;
-}

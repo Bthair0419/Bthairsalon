@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 - BT hair 比塔時尚</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem 0;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: 1px solid #333;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>BT hair</h1>
+                <p>比塔時尚</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="services.html">服務項目</a></li>
+                    <li><a href="designers.html">設計師</a></li>
+                    <li><a href="portfolio.html" class="active">作品集</a></li>
+                    <li><a href="pricing.html">價目表</a></li>
+                    <li><a href="booking.html" class="btn-booking">預約諮詢</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="padding: 4rem 0;">
+        <h1 class="section-title">作品集</h1>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">全部作品</button>
+            <button class="filter-btn" data-filter="haircut">剪髮造型</button>
+            <button class="filter-btn" data-filter="color">染髮作品</button>
+            <button class="filter-btn" data-filter="perm">燙髮作品</button>
+        </div>
+
+        <div class="gallery">
+            <!-- 作品 1 -->
+            <div class="gallery-item" data-category="haircut">
+                <img src="https://via.placeholder.com/400x500" alt="短髮造型">
+                <div class="gallery-caption">
+                    <h3>俐落短髮</h3>
+                    <p>層次剪裁，展現俐落線條</p>
+                </div>
+            </div>
+            
+            <!-- 作品 2 -->
+            <div class="gallery-item" data-category="color">
+                <img src="https://via.placeholder.com/400x500" alt="染髮作品">
+                <div class="gallery-caption">
+                    <h3>霧感茶棕</h3>
+                    <p>霧面質感，低調奢華</p>
+                </div>
+            </div>
+            
+            <!-- 作品 3 -->
+            <div class="gallery-item" data-category="perm">
+                <img src="https://via.placeholder.com/400x500" alt="燙髮作品">
+                <div class="gallery-caption">
+                    <h3>韓系氣墊燙</h3>
+                    <p>自然蓬鬆，好整理</p>
+                </div>
+            </div>
+            
+            <!-- 作品 4 -->
+            <div class="gallery-item" data-category="haircut">
+                <img src="https://via.placeholder.com/400x500" alt="中長髮造型">
+                <div class="gallery-caption">
+                    <h3>層次中長髮</h3>
+                    <p>修飾臉型，氣質滿分</p>
+                </div>
+            </div>
+            
+            <!-- 作品 5 -->
+            <div class="gallery-item" data-category="color">
+                <img src="https://via.placeholder.com/400x500" alt="特殊色染髮">
+                <div class="gallery-caption">
+                    <h3>灰調霧藍</h3>
+                    <p>個性獨特，引領潮流</p>
+                </div>
+            </div>
+            
+            <!-- 作品 6 -->
+            <div class="gallery-item" data-category="perm">
+                <img src="https://via.placeholder.com/400x500" alt="造型燙髮">
+                <div class="gallery-caption">
+                    <h3>水波紋捲髮</h3>
+                    <p>浪漫優雅，女人味十足</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>BT hair 比塔時尚</h3>
+                    <p>106 臺北市大安區忠孝東路四段216巷27弄4號</p>
+                    <p>電話：0958-479-319</p>
+                    <div class="social-links">
+                        <a href="https://line.me/R/ti/p/@223hspye" target="_blank"><i class="fab fa-line"></i></a>
+                        <a href="https://www.instagram.com/bt_fast_hair/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/p/BT-hair-61575128732235/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="services.html">服務項目</a></li>
+                        <li><a href="designers.html">設計師</a></li>
+                        <li><a href="portfolio.html">作品集</a></li>
+                        <li><a href="pricing.html">價目表</a></li>
+                        <li><a href="booking.html">預約諮詢</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>營業時間</h4>
+                    <p>週一至週五：11:00 - 20:00</p>
+                    <p>週六至週日：10:00 - 21:00</p>
+                    <p>每月第二、四個週一公休</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BT hair 比塔時尚 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+
+        // Filter gallery items
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
