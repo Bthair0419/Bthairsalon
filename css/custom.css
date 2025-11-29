@@ -1,0 +1,89 @@
+/*********************************************
+ *  BT hair - 黑金精品風側邊欄
+ *********************************************/
+
+/* 整個側欄背景純黑 */
+.wy-nav-side,
+.wy-side-scroll,
+.wy-side-nav-search {
+    background-color: #000000 !important;
+}
+
+/* LOGO 區背景也改黑（消除藍色）*/
+.wy-side-nav-search {
+    padding: 30px 20px !important;
+    background-color: #000 !important;
+}
+
+/* LOGO置中 */
+.wy-side-nav-search a,
+.wy-side-nav-search img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 側欄選單背景改深黑 */
+.wy-menu-vertical {
+    background-color: #000 !important;
+    padding-top: 10px;
+}
+
+/* 選單連結：白色文字 */
+.wy-menu-vertical a,
+.wy-menu-vertical li a {
+    color: #ffffff !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 20px !important;
+    border-left: 3px solid transparent;
+}
+
+/* 滑過選單：金色背景 + 金色左邊線條 */
+.wy-menu-vertical a:hover {
+    background-color: #222 !important;
+    border-left: 3px solid #d4af37 !important;  /* 金色 */
+    color: #d4af37 !important;
+}
+
+/* 目前頁面選單：金色標示 */
+.wy-menu-vertical .current > a {
+    background-color: #111 !important;
+    border-left: 3px solid #d4af37 !important;
+    color: #d4af37 !important;
+}
+
+/* 次層選單文字 */
+.wy-menu-vertical li ul li a {
+    color: #ccc !important;
+    padding-left: 35px !important;
+}
+
+/* 次層滑過 */
+.wy-menu-vertical li ul li a:hover {
+    color: #d4af37 !important;
+}
+
+/* 移除側欄預設陰影（更乾淨） */
+.wy-nav-side {
+    box-shadow: none !important;
+}
+
+/* 移除藍色上邊界線 */
+.wy-side-nav-search::before {
+    display: none !important;
+}
+
+/*********************************************
+ * 右側內容區也微調：更高級
+ *********************************************/
+
+/* 內文區背景偏淺灰，提升對比 */
+.wy-nav-content {
+    background-color: #f7f7f7 !important;
+}
+
+/* 麵包屑顏色微調 */
+.wy-breadcrumbs a {
+    color: #999 !important;
+}
