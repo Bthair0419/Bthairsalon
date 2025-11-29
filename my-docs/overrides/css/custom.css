@@ -87,3 +87,143 @@
 .wy-breadcrumbs a {
     color: #999 !important;
 }
+
+/*********************************************
+ * 關於我們樣式 - 精緻中文排版
+ *********************************************/
+.about-section {
+    max-width: 780px;
+    margin: 2rem auto 4rem;
+    padding: 2.5rem 2rem;
+    font-family: 'Noto Serif TC', 'PingFang TC', 'Microsoft JhengHei', serif;
+    line-height: 2.2;
+    color: #333;
+    letter-spacing: 0.05em;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about-section p {
+    margin-bottom: 1.6rem;
+    font-size: 1.08rem;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-weight: 400;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.about-section p:first-child {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #222;
+    margin: 0 0 2.2rem 0;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.about-section p:first-child::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #d4af37;
+    margin: 1.2rem auto 0;
+}
+
+.about-section p.signature {
+    font-weight: 500;
+    color: #222;
+    text-align: right;
+    font-style: normal;
+    margin: 3rem 0 0;
+    padding: 1.5rem 1rem 0;
+    border-top: 1px solid #f0f0f0;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.about-section p.signature::before {
+    content: '— ';
+    color: #d4af37;
+}
+
+/* 熱門項目樣式 */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.8rem;
+    max-width: 1200px;
+    margin: 2rem auto 4rem;
+    padding: 0 1.5rem;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: #d4af37;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: #d4af37;
+}
+
+.service-card h3 {
+    color: #2c3e50;
+    margin: 0 0 0.8rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 1.5rem 1.2rem;
+        line-height: 1.9;
+    }
+    
+    .about-section p {
+        font-size: 1.05rem;
+    }
+    
+    .about-section p:first-child {
+        font-size: 1.25rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 1.2rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem 1rem;
+    }
+}
