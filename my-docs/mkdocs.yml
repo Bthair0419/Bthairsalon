@@ -29,7 +29,7 @@ nav :
  - 首頁 : index.md
  - 設計師 : 設計師.md
  - 作品 : 作品.md
- - 產品 :  產品.md
+# - 產品 :  產品.md
  - 官方預約 :  官方預約.md
  - 價目表 : 價目表.md
 
@@ -40,6 +40,8 @@ theme:
   favicon: favicon.ico
 
 
+plugins: []
+
 extra:
   company_name: "BT hair 比塔時尚"
   company_address: "106 臺北市大安區忠孝東路四段216巷27弄4號"
@@ -49,6 +51,7 @@ extra:
 
 # 收起首頁 特殊符號 、 logo大小
 extra_css:
+  - css/custom.css
   - styles/global-center.css
   - styles/hide-expand.css
   - styles/logo-size.css
